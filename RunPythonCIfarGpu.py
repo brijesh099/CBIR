@@ -20,7 +20,7 @@ MEAN = dir_path + "/python/caffe/imagenet/ilsvrc_2012_mean.npy"
 TRAIN_BINARY = dir_path + '/analysis/binary-train.pycode'
 BINARY_PATH = dir_path + '/analysis/'
 TRAIN_DATASET = dir_path + '/examples/cbir-cifar10/dataset/train-file-list.txt'
-TEST_DATASET = dir_path + '/examples/cbir-cifar10/dataset/test-file-list-1.txt'
+TEST_DATASET = dir_path + '/examples/cbir-cifar10/dataset/test-file-list.txt'
 TRAIN_LABEL = dir_path + '/examples/cbir-cifar10/dataset/train-label.txt'
 TEST_LABEL = dir_path + '/examples/cbir-cifar10/dataset/test-label.txt'
 
@@ -89,7 +89,7 @@ class binaryCodesGenerator(object):
             for line in lines:
                 binFile.write(line + '\n')
 
-                os.remove(BINARY_PATH + 'batch' + str(i))
+            os.remove(BINARY_PATH + 'batch' + str(i))
 
         end = time.time()
         print("Total time to train: ", end - start, " seconds")
