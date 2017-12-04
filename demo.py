@@ -22,21 +22,21 @@ import os
 # ----- settings start here -----
 # set 1 to use gpu, and 0 to use cpu
 dir_path = os.path.dirname(os.path.realpath(__file__))
-#export PYTHONPATH=/home/aditya/Downloads/Temp/caffe-cvprw15-master/python/:$PYTHONPATH
+
 
 use_gpu = 0
 # binary code length
 feat_len = 48
 # models
-model_file = dir_path + '/examples/cvprw15-cifar10/KevinNet_CIFAR10_48.caffemodel'
+model_file = dir_path + '/examples/cbir-cifar10/CPU_48.caffemodel'
 # model definition
-model_def_file = dir_path + '/examples/cvprw15-cifar10/KevinNet_CIFAR10_48_deploy.prototxt'
+model_def_file = dir_path + '/examples/cbir-cifar10/cbir_48_deploy.prototxt'
 # input data
 test_file_list = dir_path + '/img_list.txt'
 # ------ settings end here ------
 [feat_test, list_im] = matcaffe_batch_feat(test_file_list, use_gpu, feat_len, model_def_file, model_file)
 binary_codes = (feat_test > 0.5)
-save('binary48.mat', 'binary_codes', 'list_im', '-v7.3')
+save('decode.pycode', 'binary_codes', 'list_im', '-v7.3')
 
 
 # -----------------------------------------------------------
@@ -55,7 +55,7 @@ use_gpu = 0
 # binary code length
 feat_len = 4096
 # models
-model_file = './examples/cvprw15-cifar10/KevinNet_CIFAR10_48.caffemodel'
+model_file = './examples/cbir-cifar10/cbir_48.caffemodel'
 # model definition
 model_def_file = './models/bvlc_reference_caffenet/deploy_l7.prototxt'
 # input data
