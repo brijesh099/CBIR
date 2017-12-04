@@ -38,7 +38,7 @@ class binaryCodesGenerator(object):
         # caffe.set_mode_cpu()
         self.net = caffe.Net(self.proto, self.model)  # , caffe.TEST)
         self.net.set_phase_test()
-        self.net.set_mode_cpu()
+        self.net.set_mode_gpu()
         self.net.forward()
         self.transformer = caffe.io.Transformer({'data': self.net.blobs['data'].data.shape})
         self.transformer.set_transpose('data', (2, 0, 1))
