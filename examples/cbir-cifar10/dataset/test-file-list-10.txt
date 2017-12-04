@@ -1,0 +1,10 @@
+./examples/cbir-cifar10/dataset/test/4590.jpg
+./examples/cbir-cifar10/dataset/test/7331.jpg
+./examples/cbir-cifar10/dataset/test/4941.jpg
+./examples/cbir-cifar10/dataset/test/1030.jpg
+./examples/cbir-cifar10/dataset/test/3094.jpg
+./examples/cbir-cifar10/dataset/test/8528.jpg
+./examples/cbir-cifar10/dataset/test/1314.jpg
+./examples/cbir-cifar10/dataset/test/5335.jpg
+./examples/cbir-cifar10/dataset/test/4097.jpg
+./examples/cbir-cifar10/dataset/test/7059.jpg

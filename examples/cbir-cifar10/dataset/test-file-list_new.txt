@@ -1,0 +1,1 @@
+./examples/cbir-cifar10/dataset/test/632.jpg
