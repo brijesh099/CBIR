@@ -1,4 +1,4 @@
-1. Download the project from the git repository https://github.com/ad1tya/DicProjectRepo
+1. Download the project from the git repository.
 
 2. Open the terminal
 
